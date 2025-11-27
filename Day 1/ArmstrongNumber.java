@@ -6,6 +6,7 @@ public class ArmstrongNumber {
         int temp = n;
         int count = 0;
 
+
         while (temp > 0) {
             temp = temp / 10;
             count++;
