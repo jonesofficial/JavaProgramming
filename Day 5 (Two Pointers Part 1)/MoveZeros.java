@@ -7,14 +7,19 @@ public class MoveZeros {
         int starter = 0;
 
         for (int l = 0; l < arr.length; l++) {
-            if (arr[l] == 0) {
-                arr[r] = arr[l];
-                r--;
+            if (arr[l] != 0) {
+                arr[starter] = arr[l];
+                starter++;
             }
-
-            System.out.println(Arrays.toString(arr));
         }
-        
+
+        for (int i = starter; i < arr.length; i++) {
+            arr[i] = 0;
+        }
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
 
     }
 }
