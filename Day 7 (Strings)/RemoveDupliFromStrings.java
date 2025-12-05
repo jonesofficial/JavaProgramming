@@ -13,15 +13,13 @@ public class RemoveDupliFromStrings {
             int index = ch - 'a';
 
             if (freq[index] == false) {
-                s.charAt(l = s.charAt(i);
+                sb.append(ch);
                 freq[index] = true;
                 l++;
             }
         }
         System.out.println("Original string: " + str);
-        System.out.println("String without duplicates: ");
-        for (int i = 0; i < l; i++) {
-            System.out.println(s.charAt(i));
-        }
+        System.out.println("String without duplicates: " + sb.toString());
+
     }
 }
